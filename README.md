@@ -12,16 +12,12 @@
 
 </div>
 
----
-
 ## 📌 Overview
 
 **IPL-Crunch-26** is an end-to-end exploratory data analysis project on the Indian Premier League's ball-by-ball dataset.
 It reads a single CSV (~290k ball records across 1,218 matches), derives match-level and player-level statistics, generates a curated set of charts, and stitches everything into a multi-page PDF report — all from one command.
 
 > 🎯 **Goal:** turn raw ball-level data into a clean, presentation-ready story about toss impact, team dominance, player legends, and league-wide trends.
-
----
 
 ## 📂 Project Structure
 
@@ -44,8 +40,6 @@ IPL-Crunch-26/
 └── 📝 README.md
 ```
 
----
-
 ## 🗂  About the Data
 
 | Property | Value |
@@ -62,8 +56,6 @@ IPL-Crunch-26/
 > ✅ **What this project does instead:**
 > - **Match-level stats** → deduplicate on `match_id` first, then aggregate.
 > - **Player-level stats** → use the raw ball data and group by `batter` / `bowler`.
-
----
 
 ## 🚀 Quick Start
 
@@ -85,8 +77,6 @@ This rewrites every PNG in `charts/` and regenerates `report.pdf`.
 2. Upload the CSV via the file sidebar (📁 icon on the left).
 3. Update `CSV_PATH` in the first cell if your filename differs.
 4. **Runtime → Run all**.
-
----
 
 ## 📈 What You Get
 
@@ -114,8 +104,6 @@ This rewrites every PNG in `charts/` and regenerates `report.pdf`.
 | `matches_per_season.png` | Match volume across all 19 seasons. |
 | `top_venues.png` | Most-used venues across the league's history. |
 
----
-
 ## 💡 Key Takeaways
 
 - 🪙 **Toss is overrated** — only a ~0.5% edge over a coin flip.
@@ -124,16 +112,12 @@ This rewrites every PNG in `charts/` and regenerates `report.pdf`.
 - 🦸 **AB de Villiers** delivers match-winning performances most often.
 - 👑 **Virat Kohli** is the all-time run-scoring king of the league.
 
----
-
 ## 🛠  Tech Stack
 
 - **Python 3.11**
 - **pandas** — data wrangling & aggregation
 - **matplotlib** — charts + multi-page PDF (`PdfPages`, no extra deps)
 - **Jupyter** — interactive walkthrough
-
----
 
 ## 🔁 Re-running
 
@@ -145,8 +129,6 @@ python analysis.py
 
 Charts and the PDF refresh in place. Safe to commit the outputs.
 
----
-
 ## 🧭 Roadmap Ideas
 
 - [ ] Add powerplay vs death-overs run-rate comparison
@@ -154,8 +136,6 @@ Charts and the PDF refresh in place. Safe to commit the outputs.
 - [ ] Strike rate vs average scatter for top batters
 - [ ] Economy vs wickets scatter for top bowlers
 - [ ] Interactive Plotly version of the dashboard
-
----
 
 <div align="center">
 
